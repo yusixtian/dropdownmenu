@@ -1,27 +1,25 @@
 @media (max-width: 768px){
+	.header{
+		position: relative;
+	}
 	.firstlevel-container{
 		padding: 0;
 		width: 100%;
 	}
 	.dd-icon{
 		padding-right: 15px;
+		display: none;
+	}
+	.top-icon{
 		float: right;
 	}
-	.navbar-mobile-ico{
-		display: block;
-	}
 	.navbar {
-		display: none;
+		width: 100%;
 	}
 	.navbar a{
 		border-bottom: 1px #ddd solid;
 		display: block;
 	    text-align: left;
-	}
-	.navbar-mobile-ico:hover + .navbar,
-	.navbar-mobile-ico:active + .navbar{
-		display: block;
-		width: 100%;
 	}
 	.dd-container:not(.firstlevel-container) > .dropdown-content{
 		background-color: #f9f9f9;
@@ -33,5 +31,7 @@
 		position: inherit;
 		width: 100%;
 	}
-
+	.dd-link::after{
+		display: block;
+	}
 }

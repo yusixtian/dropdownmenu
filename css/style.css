@@ -17,22 +17,6 @@ body{
 }
 
 
-/*Burger Menu*/
-.navbar-mobile-ico{
-border: 1px #333 solid;
-    border-radius: 3px;
-    padding: 5px 10px;
-    background-color: #333;
-    color: #fff;
-    display: none;
-    font-size: 22px;
-    position: absolute;
-    right: 15px;
-    text-decoration: none;
-    top: 8px;
-}
-
-
 /*dropdown icons*/
 .dd-icon{
 	margin-left: 5px;
@@ -71,6 +55,9 @@ border: 1px #333 solid;
 	display: block;
 	text-align: left;
 }
+.dd-link::after{
+	display: none;
+}
 
 
 /*Change state*/
@@ -83,4 +70,12 @@ border: 1px #333 solid;
 }
 .dd-container:hover > .dropdown-content {
 	display: block;
+}
+.dd-link::after {
+	content: "\25bc";
+	float: right;
+}
+.dd-link:hover::after{
+	content: "\25b2";
+	float: right;
 }
